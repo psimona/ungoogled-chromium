@@ -1,3 +1,5 @@
+set -euxo pipefail
+
 ./utilikit/check_requirements.py --common --quilt
 mkdir build/
 mkdir build/sandbox

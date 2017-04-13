@@ -10,6 +10,6 @@ env:
     - UTILIKIT_CONFIG_TYPE=linux_conservative
     - UTILIKIT_CONFIG_TYPE=debian_stretch
 script:
-  - travis_build.sh
+  - bash ./travis_build.sh
 os:
  - linux
