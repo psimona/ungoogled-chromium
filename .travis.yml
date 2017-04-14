@@ -1,0 +1,14 @@
+language: cpp
+sudo: required
+compiler:
+  - clang
+before_install:
+- sudo apt install packaging-dev python3 python2 ninja
+env:
+  global:
+    - UTILIKIT_CONFIG_TYPE=linux_conservative
+    - UTILIKIT_CONFIG_TYPE=debian_stretch
+script:
+  - travis_build.sh
+os:
+ - linux
